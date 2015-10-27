@@ -58,12 +58,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebFormAddIncident.aspx" />
+    <Content Include="WebFormAddRegistration.aspx" />
     <Content Include="WebFormLogin.aspx" />
     <Content Include="WebFormMain.aspx" />
     <Content Include="WebFormProductMaintenance.aspx" />
+    <Content Include="WebFormTechnicianMaintenance.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFormAddIncident.aspx.cs">
+      <DependentUpon>WebFormAddIncident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormAddIncident.aspx.designer.cs">
+      <DependentUpon>WebFormAddIncident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormAddRegistration.aspx.cs">
+      <DependentUpon>WebFormAddRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormAddRegistration.aspx.designer.cs">
+      <DependentUpon>WebFormAddRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebFormLogin.aspx.cs">
       <DependentUpon>WebFormLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,6 +101,13 @@
     </Compile>
     <Compile Include="WebFormProductMaintenance.aspx.designer.cs">
       <DependentUpon>WebFormProductMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormTechnicianMaintenance.aspx.cs">
+      <DependentUpon>WebFormTechnicianMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormTechnicianMaintenance.aspx.designer.cs">
+      <DependentUpon>WebFormTechnicianMaintenance.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
