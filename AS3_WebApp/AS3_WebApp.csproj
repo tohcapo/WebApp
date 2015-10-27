@@ -58,12 +58,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="WebFormCustomerIncidents.aspx" />
     <Content Include="WebFormLogin.aspx" />
     <Content Include="WebFormMain.aspx" />
     <Content Include="WebFormProductMaintenance.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebFormCustomerIncidents.aspx.cs">
+      <DependentUpon>WebFormCustomerIncidents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormCustomerIncidents.aspx.designer.cs">
+      <DependentUpon>WebFormCustomerIncidents.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebFormLogin.aspx.cs">
       <DependentUpon>WebFormLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
