@@ -31,6 +31,12 @@
                 <td>Address:</td>
                 <td><asp:TextBox ID="textAddress" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
+            <tr>
+                <td>City. State. Zip:</td>
+                <td><asp:TextBox ID="textCity" runat="server" ReadOnly="true" Width="120px"/></td>
+                <td><asp:TextBox ID="textState" runat="server" ReadOnly="true" Width="70px"/></td>
+                <td><asp:TextBox ID="textZip" runat="server" ReadOnly="true" Width="70px"/></td>
+            </tr>
         </table>
     </form>
 </body>
