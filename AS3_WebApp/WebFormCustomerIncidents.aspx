@@ -6,33 +6,35 @@
     <table>
             <tr>
                 <td>Customer ID:</td>
-                <td><asp:TextBox ID="TextBox1" runat="server" Width="200px" /></td>
-                <td><asp:Button ID="button1" runat="server" Text="Get Customer" /></td>
+                <td><asp:TextBox ID="textCustomerID" runat="server" Width="200px" /></td>
+                <td><asp:Button ID="buttonGetCustomer" runat="server" Text="Get Customer" /></td>
             </tr>
             <tr>
                <td>Customer ID:</td>
-                <td><asp:TextBox ID="TextBox2" runat="server" ReadOnly="true" Width="200px"/></td>
+                <td><asp:TextBox ID="textCustomerIDDisplay" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
             <tr>
                 <td>Name:</td>
-                <td><asp:TextBox ID="TextBox3" runat="server" ReadOnly="true" Width="200px"/></td>
+                <td><asp:TextBox ID="textName" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
             <tr>
                 <td>Address:</td>
-                <td><asp:TextBox ID="TextBox4" runat="server" ReadOnly="true" Width="200px"/></td>
+                <td><asp:TextBox ID="textAddress" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
             <tr>
                 <td>City. State. Zip:</td>
-                <td><asp:TextBox ID="TextBox5" runat="server" ReadOnly="true" Width="120px"/></td>
-                <td><asp:TextBox ID="TextBox6" runat="server" ReadOnly="true" Width="70px"/></td>
-                <td><asp:TextBox ID="TextBox7" runat="server" ReadOnly="true" Width="70px"/></td>
+                <td><asp:TextBox ID="textCity" runat="server" ReadOnly="true" Width="120px"/></td>
+                <td><asp:TextBox ID="textState" runat="server" ReadOnly="true" Width="70px"/></td>
+                <td><asp:TextBox ID="textZip" runat="server" ReadOnly="true" Width="70px"/></td>
             </tr>
             <tr>
                 <td>Phone:</td>
-                <td><asp:TextBox ID="TextBox8" runat="server" ReadOnly="true" Width="200px"/></td>
+                <td><asp:TextBox ID="textPhone" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
+            <tr>
             <td>Email:</td>
-            <td><asp:TextBox ID="TextBox9" runat="server" ReadOnly="true" Width="200px"/></td>
+            <td><asp:TextBox ID="textEmail" runat="server" ReadOnly="true" Width="200px"/></td>
+            </tr>
         </table>
         <br />
         <table border="1">
