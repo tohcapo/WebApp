@@ -37,6 +37,21 @@
                 <td><asp:TextBox ID="textState" runat="server" ReadOnly="true" Width="70px"/></td>
                 <td><asp:TextBox ID="textZip" runat="server" ReadOnly="true" Width="70px"/></td>
             </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><asp:TextBox ID="textPhone" runat="server" ReadOnly="true" Width="200px"/></td>
+            </tr>
+            <td>Email:</td>
+            <td><asp:TextBox ID="textEmail" runat="server" ReadOnly="true" Width="200px"/></td>
+        </table>
+        <br />
+        <table border="1">
+            <tr style="font-weight:bold">
+                <td style="width:200px">Product</td>
+                <td style="width:200px">Date Opened</td>
+                <td style="width:200px">Date Closed</td>
+                <td style="width:200px">Title</td>
+            </tr>
         </table>
     </form>
 </body>
