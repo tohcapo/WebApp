@@ -69,6 +69,7 @@
     <Content Include="WebFormMain.aspx" />
     <Content Include="WebFormProductMaintenance.aspx" />
     <Content Include="WebFormTechnicianMaintenance.aspx" />
+    <Content Include="WebFormUserAccountMaintenance.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="WebFormTechnicianMaintenance.aspx.designer.cs">
       <DependentUpon>WebFormTechnicianMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormUserAccountMaintenance.aspx.cs">
+      <DependentUpon>WebFormUserAccountMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormUserAccountMaintenance.aspx.designer.cs">
+      <DependentUpon>WebFormUserAccountMaintenance.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
