@@ -3,24 +3,30 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink>
-        <table border="1">
-            <tr style="font-weight:bold">
-                <td style="width:200px">Product Code</td>
-                <td style="width:200px">Name</td>
-                <td style="width:200px">Version</td>
-                <td style="width:200px">Release Date</td>
-            </tr>
-            <tr>
-                <td>DRAFT10</td>
-                <td>Draft Manager 1.0</td>
-                <td>1.0</td>
-                <td>12/1/2010</td>
-                <td>
-                    <asp:Button ID="button1" runat="server" Text="Edit" />
-                </td>
-                <td>
-                    <asp:Button ID="button2" runat="server" Text="Delete" />
-                </td>
-            </tr>
-        </table>
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ProductCode" DataSourceID="TechSupportDataSource">
+        <Columns>
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+            <asp:BoundField DataField="ProductCode" HeaderText="ProductCode" ReadOnly="True" SortExpression="ProductCode" />
+            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+            <asp:BoundField DataField="Version" HeaderText="Version" SortExpression="Version" />
+            <asp:BoundField DataField="ReleaseDate" DataFormatString="{0:d}" HeaderText="ReleaseDate" SortExpression="ReleaseDate" />
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource ID="TechSupportDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" DeleteCommand="DELETE FROM [Products] WHERE [ProductCode] = @ProductCode" InsertCommand="INSERT INTO [Products] ([ProductCode], [Name], [Version], [ReleaseDate]) VALUES (@ProductCode, @Name, @Version, @ReleaseDate)" SelectCommand="SELECT * FROM [Products]" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Version] = @Version, [ReleaseDate] = @ReleaseDate WHERE [ProductCode] = @ProductCode">
+        <DeleteParameters>
+            <asp:Parameter Name="ProductCode" Type="String" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="ProductCode" Type="String" />
+            <asp:Parameter Name="Name" Type="String" />
+            <asp:Parameter Name="Version" Type="Decimal" />
+            <asp:Parameter Name="ReleaseDate" Type="DateTime" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="Name" Type="String" />
+            <asp:Parameter Name="Version" Type="Decimal" />
+            <asp:Parameter Name="ReleaseDate" Type="DateTime" />
+            <asp:Parameter Name="ProductCode" Type="String" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>

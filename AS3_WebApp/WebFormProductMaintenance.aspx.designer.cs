@@ -22,21 +22,21 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
         
         /// <summary>
-        /// button1 control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button1;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// button2 control.
+        /// TechSupportDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button button2;
+        protected global::System.Web.UI.WebControls.SqlDataSource TechSupportDataSource;
     }
 }
