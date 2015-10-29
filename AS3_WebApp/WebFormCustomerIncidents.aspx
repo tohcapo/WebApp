@@ -1,19 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebFormCustomerIncidents.aspx.cs" Inherits="AS3_WebApp.WebFormCustomerIncidents" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Customer Incidents</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink>
-    
-    </div>
-        <table>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="WebFormCustomerIncidents.aspx.cs" Inherits="AS3_WebApp.WebFormCustomerIncidents" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
+    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink>
+    <br />
+    <table>
             <tr>
                 <td>Customer ID:</td>
                 <td><asp:TextBox ID="textCustomerID" runat="server" Width="200px" /></td>
@@ -41,8 +32,10 @@
                 <td>Phone:</td>
                 <td><asp:TextBox ID="textPhone" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
+            <tr>
             <td>Email:</td>
             <td><asp:TextBox ID="textEmail" runat="server" ReadOnly="true" Width="200px"/></td>
+            </tr>
         </table>
         <br />
         <table border="1">
@@ -53,6 +46,4 @@
                 <td style="width:200px">Title</td>
             </tr>
         </table>
-    </form>
-</body>
-</html>
+</asp:Content>
