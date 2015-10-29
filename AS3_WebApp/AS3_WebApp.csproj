@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Styles\StyleSheet.css" />
+    <Content Include="TechSupport.mdf" />
+    <Content Include="TechSupport_log.ldf" />
     <Content Include="Web.config" />
     <Content Include="WebFormAddIncident.aspx" />
     <Content Include="WebFormAddRegistration.aspx" />
