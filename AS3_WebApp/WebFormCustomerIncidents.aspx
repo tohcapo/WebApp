@@ -38,12 +38,15 @@
             </tr>
         </table>
         <br />
-        <table border="1">
-            <tr style="font-weight:bold">
-                <td style="width:200px">Product</td>
-                <td style="width:200px">Date Opened</td>
-                <td style="width:200px">Date Closed</td>
-                <td style="width:200px">Title</td>
-            </tr>
-        </table>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IncidentID" DataSourceID="TechSupportDataSource">
+        <Columns>
+            <asp:BoundField DataField="IncidentID" HeaderText="IncidentID" InsertVisible="False" ReadOnly="True" SortExpression="IncidentID" />
+            <asp:BoundField DataField="ProductCode" HeaderText="ProductCode" SortExpression="ProductCode" />
+            <asp:BoundField DataField="DateOpened" HeaderText="DateOpened" SortExpression="DateOpened" />
+            <asp:BoundField DataField="DateClosed" HeaderText="DateClosed" SortExpression="DateClosed" />
+            <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
+            <asp:BoundField DataField="CustomerID" HeaderText="CustomerID" SortExpression="CustomerID" />
+        </Columns>
+</asp:GridView>
+<asp:SqlDataSource ID="TechSupportDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT [IncidentID], [ProductCode], [DateOpened], [DateClosed], [Title], [CustomerID] FROM [Incidents]"></asp:SqlDataSource>
 </asp:Content>
