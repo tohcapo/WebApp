@@ -9,20 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <table>
-            <tr>
-                <td><asp:Label ID="label1" runat="server" Text="UserID:" /></td>
-                <td><asp:TextBox ID="textBoxUserID" runat="server" /></td>
-            </tr>
-            <tr>
-                <td><asp:Label ID="label2" runat="server" Text="Password:" /></td>
-                <td><asp:TextBox ID="textBoxPassword" runat="server" TextMode="Password" /></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><asp:Button ID="buttonLogin" runat="server" Width="100%" Text="Login" PostBackUrl="~/WebFormMain.aspx" /></td>
-            </tr>
-        </table>
+        <asp:Login ID="Login" runat="server"></asp:Login>
     </div>
     </form>
 </body>
