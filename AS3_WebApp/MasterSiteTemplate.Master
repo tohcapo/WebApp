@@ -10,22 +10,20 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>Tech Support</h1>
+        <div>
+            <h1>Tech Support</h1>
         
-        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticSubMenuIndent="16px">
-        </asp:Menu>
-        <asp:SiteMapPath ID="SiteMapPath1" runat="server">
-        </asp:SiteMapPath>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
         
-        <br />
-        <br />
+            <br />
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
 
-        &copy 2015 Tech Support
-    </div>
+            <p>&copy 2015 Tech Support</p>
+        </div>
     </form>
 </body>
 </html>
