@@ -73,6 +73,9 @@
     <Content Include="WebFormUserAccountMaintenance.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Customer.cs" />
+    <Compile Include="Data\dbConnection.cs" />
+    <Compile Include="Data\Incident.cs" />
     <Compile Include="MasterSiteTemplate.Master.cs">
       <DependentUpon>MasterSiteTemplate.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
