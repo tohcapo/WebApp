@@ -10,7 +10,7 @@
 namespace AS3_WebApp {
     
     
-    public partial class WebFormCustomerIncidents {
+    public partial class WebFormUserAccountMaintenance {
         
         /// <summary>
         /// HyperLink2 control.
