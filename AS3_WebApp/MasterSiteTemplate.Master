@@ -10,20 +10,20 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>Tech Support</h1>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebFormTechnicianMaintenance.aspx">Technician Maintenance</asp:HyperLink>|
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebFormProductMaintenance.aspx">Product Maintenance</asp:HyperLink>|
-        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/WebFormCustomerIncidents.aspx">Customer Incidents</asp:HyperLink>|
-        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/WebFormAddIncident.aspx">Add Incident</asp:HyperLink>|
-        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebFormAddRegistration.aspx">Add Registration</asp:HyperLink>|
-        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/WebFormUserAccountMaintenance.aspx">User Account Maintenance</asp:HyperLink>
-        <br />
+        <div>
+            <h1>Tech Support</h1>
+        
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        
+            <br />
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
 
-        &copy 2015 Tech Support
-    </div>
+            <p>&copy 2015 Tech Support</p>
+        </div>
     </form>
 </body>
 </html>

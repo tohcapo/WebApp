@@ -4,14 +4,84 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="TechID" DataSourceID="SqlDataSource" Width="272px">
-            <Columns>
-                <asp:BoundField DataField="TechID" HeaderText="TechID" InsertVisible="False" ReadOnly="True" SortExpression="TechID" />
-                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-                <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone" />
-            </Columns>
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT * FROM [Technicians]"></asp:SqlDataSource>
-        <br />
-        </asp:Content>
+        <table border="1">
+            <tr style="font-weight:bold">
+                <td style="width:200px" class="auto-style1">Tech ID</td>
+                <td style="width:200px" class="auto-style1">Name</td>
+                <td style="width:200px" class="auto-style1">Email</td>
+                <td style="width:200px" class="auto-style1">Phone</td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete" runat="server" Text="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit0" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete0" runat="server" Text="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit1" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete1" runat="server" Text="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit2" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete2" runat="server" Text="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit3" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete3" runat="server" Text="Delete" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td class="auto-style1">&nbsp;</td>
+                <td>
+                    <asp:Button ID="buttonEdit4" runat="server" Text="Edit" />
+                </td>
+                <td>
+                    <asp:Button ID="buttonDelete4" runat="server" Text="Delete" />
+                </td>
+            </tr>
+        </table>
+</asp:Content>
