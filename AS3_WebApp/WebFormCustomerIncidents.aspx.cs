@@ -11,7 +11,12 @@ namespace AS3_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void buttonGetCustomer_Click(object sender, EventArgs e)
+        {
+            TechSupportDataSource.SelectCommand = "SELECT [IncidentID], [ProductCode], [DateOpened], [DateClosed], [Title], [CustomerID] FROM [Incidents] WHERE CustomerID=" + textCustomerID.Text;
         }
     }
 }
