@@ -29,26 +29,27 @@ namespace AS3_WebApp.Data
             }
         }
 
-        public DataSet GetCustomers()
+        public Customer GetCustomerByCustomerID(int CustomerID)
         {
-            da.SelectCommand = new SqlCommand(@"select * from Customers;", con);
-
-            DataSet ds = new DataSet();
-
-            da.Fill(ds, "Customers");
-
-            return ds;
-        }
-
-        public DataSet GetCustomerByID(int CustomerID)
-        {
-            da.SelectCommand = new SqlCommand(@"select 1 from Customers where CustomerID=" + CustomerID, con);
-
-            DataSet ds = new DataSet();
-
-            da.Fill(ds, "Customers");
-
-            return ds;
+            Customer c;
+            SqlCommand cmd;
+            using (cmd = new SqlCommand(@"SELECT * FROM Customers WHERE CustomerID=" + CustomerID + ";", con))
+            {
+                using (var r = cmd.ExecuteReader())
+                {
+                    r.Read();
+                    c = new Customer(
+                        r.GetInt32(r.GetOrdinal("CustomerID")),
+                        r.GetString(r.GetOrdinal("Name")),
+                        r.GetString(r.GetOrdinal("Address")),
+                        r.GetString(r.GetOrdinal("City")),
+                        r.GetString(r.GetOrdinal("State")),
+                        r.GetString(r.GetOrdinal("ZipCode")),
+                        r.GetString(r.GetOrdinal("Phone")),
+                        r.GetString(r.GetOrdinal("Email")));
+                }
+            }
+            return c;
         }
     }
 }
