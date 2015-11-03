@@ -13,6 +13,24 @@ namespace AS3_WebApp {
     public partial class WebFormCustomerIncidents {
         
         /// <summary>
+        /// ScriptManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager;
+        
+        /// <summary>
+        /// UpdatePanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel;
+        
+        /// <summary>
         /// textBoxCustomerID control.
         /// </summary>
         /// <remarks>
@@ -103,21 +121,30 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxEmail;
         
         /// <summary>
-        /// GridView1 control.
+        /// GridViewIncidents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridViewIncidents;
         
         /// <summary>
-        /// TechSupportDataSource control.
+        /// SqlDataSourceIncidents control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource TechSupportDataSource;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceIncidents;
+        
+        /// <summary>
+        /// SqlDataSourceCustomer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceCustomer;
     }
 }
