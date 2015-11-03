@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
-    <asp:HyperLink runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink><asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+    <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
         <WizardSteps>
             <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
             </asp:CreateUserWizardStep>

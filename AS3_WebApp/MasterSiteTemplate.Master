@@ -15,19 +15,22 @@
             <h1 style="text-align:center">Tech Support</h1>
         
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-            <div style="margin:0 auto 0 auto; width:80%">
+            <div id="navbar-container">
                 <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource1" ForeColor="Black">
                     <StaticMenuItemStyle BorderColor="Black" BorderStyle="Solid" HorizontalPadding="18px"/>
                 </asp:Menu>
             </div>
             
             <hr />
-        
             <br />
 
-            <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
-
-            <p>&copy 2015 Tech Support</p>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
+            </div>
+            
+            <div class="footer">
+                <p>&copy 2015 Tech Support</p>
+            </div>
         </div>
     </form>
 </body>

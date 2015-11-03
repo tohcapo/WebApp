@@ -2,19 +2,25 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
-    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebFormMain.aspx">Back</asp:HyperLink>
-    <br />
+
+
     <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
-    <table>
+        <table>
             <tr>
-                <td>Customer ID:</td>
+                <td width="150px">Customer ID:</td>
                 <td><asp:TextBox ID="textCustomerID" runat="server" Width="200px" /></td>
-                <td><asp:Button ID="buttonGetCustomer" runat="server" Text="Get Customer" OnClick="buttonGetCustomer_Click" /></td>
             </tr>
             <tr>
-               <td>Customer ID:</td>
+                <td></td>
+                <td><asp:Button ID="buttonGetCustomer" runat="server" Text="Get Customer" OnClick="buttonGetCustomer_Click" /></td>
+            </tr>
+        </table>
+        <br />
+        <table>
+            <tr>
+                <td width="150px">Customer ID:</td>
                 <td><asp:TextBox ID="textCustomerIDDisplay" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
             <tr>
@@ -27,21 +33,21 @@
             </tr>
             <tr>
                 <td>City. State. Zip:</td>
-                <td><asp:TextBox ID="textCity" runat="server" ReadOnly="true" Width="120px"/></td>
-                <td><asp:TextBox ID="textState" runat="server" ReadOnly="true" Width="70px"/></td>
-                <td><asp:TextBox ID="textZip" runat="server" ReadOnly="true" Width="70px"/></td>
+                <td><asp:TextBox ID="textCity" runat="server" ReadOnly="true" Width="120px"/>
+                <asp:TextBox ID="textState" runat="server" ReadOnly="true" Width="70px"/>
+                <asp:TextBox ID="textZip" runat="server" ReadOnly="true" Width="70px"/></td>
             </tr>
             <tr>
                 <td>Phone:</td>
                 <td><asp:TextBox ID="textPhone" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
             <tr>
-            <td>Email:</td>
-            <td><asp:TextBox ID="textEmail" runat="server" ReadOnly="true" Width="200px"/></td>
+                <td>Email:</td>
+                <td><asp:TextBox ID="textEmail" runat="server" ReadOnly="true" Width="200px"/></td>
             </tr>
         </table>
         <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IncidentID" DataSourceID="TechSupportDataSource">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IncidentID" DataSourceID="TechSupportDataSource" Width="100%">
                 <Columns>
                     <asp:BoundField DataField="IncidentID" HeaderText="IncidentID" InsertVisible="False" ReadOnly="True" SortExpression="IncidentID" />
                     <asp:BoundField DataField="ProductCode" HeaderText="ProductCode" SortExpression="ProductCode" />
