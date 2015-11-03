@@ -21,6 +21,7 @@ namespace AS3_WebApp.Data
             CustomerID = customerID;
             Name = name;
             Address = address;
+            City = city;
             State = state;
             ZipCode = zipCode;
             Phone = phone;
