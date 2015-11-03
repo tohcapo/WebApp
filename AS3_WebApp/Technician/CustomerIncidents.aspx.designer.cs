@@ -13,40 +13,13 @@ namespace AS3_WebApp {
     public partial class WebFormCustomerIncidents {
         
         /// <summary>
-        /// HyperLink2 control.
+        /// textBoxCustomerID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
-        
-        /// <summary>
-        /// ScriptManager1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
-        
-        /// <summary>
-        /// UpdatePanel1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
-        /// <summary>
-        /// textCustomerID control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textCustomerID;
+        protected global::System.Web.UI.WebControls.TextBox textBoxCustomerID;
         
         /// <summary>
         /// buttonGetCustomer control.
@@ -58,76 +31,76 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.Button buttonGetCustomer;
         
         /// <summary>
-        /// textCustomerIDDisplay control.
+        /// textBoxCustomerIDDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textCustomerIDDisplay;
+        protected global::System.Web.UI.WebControls.TextBox textBoxCustomerIDDisplay;
         
         /// <summary>
-        /// textName control.
+        /// textBoxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textName;
+        protected global::System.Web.UI.WebControls.TextBox textBoxName;
         
         /// <summary>
-        /// textAddress control.
+        /// textboxAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textAddress;
+        protected global::System.Web.UI.WebControls.TextBox textboxAddress;
         
         /// <summary>
-        /// textCity control.
+        /// textBoxCity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textCity;
+        protected global::System.Web.UI.WebControls.TextBox textBoxCity;
         
         /// <summary>
-        /// textState control.
+        /// textBoxState control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textState;
+        protected global::System.Web.UI.WebControls.TextBox textBoxState;
         
         /// <summary>
-        /// textZip control.
+        /// textBoxZipCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textZip;
+        protected global::System.Web.UI.WebControls.TextBox textBoxZipCode;
         
         /// <summary>
-        /// textPhone control.
+        /// textBoxPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textPhone;
+        protected global::System.Web.UI.WebControls.TextBox textBoxPhone;
         
         /// <summary>
-        /// textEmail control.
+        /// textBoxEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textEmail;
+        protected global::System.Web.UI.WebControls.TextBox textBoxEmail;
         
         /// <summary>
         /// GridView1 control.

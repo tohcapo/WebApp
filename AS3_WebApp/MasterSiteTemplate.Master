@@ -12,11 +12,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1 class="header">Tech Support</h1>
+            <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
 
-            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <h1 class="header">Tech Support</h1>
             <div id="navbar-container">
-                <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource1" ForeColor="Black">
+                <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource" ForeColor="Black">
                     <StaticMenuItemStyle BorderColor="Black" BorderStyle="Solid" HorizontalPadding="18px"/>
                 </asp:Menu>
             </div>

@@ -57,11 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TechSupport.mdf" />
+    <Content Include="App_Data\TechSupport_log.ldf">
+      <DependentUpon>TechSupport.mdf</DependentUpon>
+    </Content>
     <Content Include="Images\bell.png" />
     <Content Include="Images\whistle.png" />
     <Content Include="Styles\StyleSheet.css" />
-    <Content Include="App_Data\TechSupport.mdf" />
-    <Content Include="App_Data\TechSupport_log.ldf" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -31,13 +31,13 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// SiteMapDataSource1 control.
+        /// SiteMapDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource1;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource;
         
         /// <summary>
         /// NavigationMenu control.

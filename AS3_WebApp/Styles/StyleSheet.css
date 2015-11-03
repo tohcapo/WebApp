@@ -46,7 +46,11 @@ br {
 }
 
 .formTextBox {
-    width: 200px;
+    width: 240px;
+}
+
+.formTextBoxSmall {
+    width: 75px;
 }
 
 .formButton {
@@ -58,10 +62,10 @@ br {
 }
 
 .formDropDownList {
-    width: 200px;
+    width: 240px;
 }
 
 .formTextArea {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
 }
