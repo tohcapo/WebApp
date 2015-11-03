@@ -2,9 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
-
     <asp:ScriptManager ID="ScriptManager" runat="server"></asp:ScriptManager>
-    
     <asp:UpdatePanel ID="UpdatePanel" runat="server" UpdateMode="Conditional">
         <ContentTemplate>
             <div class="container">
@@ -17,28 +15,29 @@
                     <hr />
 
                     <label>Customer ID:</label>
-                    <asp:TextBox ID="textBoxCustomerIDDisplay" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:TextBox ID="textBoxCustomerIDDisplay" runat="server" ReadOnly="true" CssClass="formTextBox" BackColor="Silver" />
                     <br />
                     <label>Name:</label>
-                    <asp:TextBox ID="textBoxName" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:TextBox ID="textBoxName" runat="server" ReadOnly="true" CssClass="formTextBox" BackColor="Silver" />
                     <br />
                     <label>Address</label>
-                    <asp:TextBox ID="textboxAddress" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:TextBox ID="textboxAddress" runat="server" ReadOnly="true" CssClass="formTextBox" BackColor="Silver" />
                     <br />
                     <label>City. State. Zip:</label>
-                    <asp:TextBox ID="textBoxCity" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" />
-                    <asp:TextBox ID="textBoxState" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" />
-                    <asp:TextBox ID="textBoxZipCode" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" />
+                    <asp:TextBox ID="textBoxCity" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" BackColor="Silver" />
+                    <asp:TextBox ID="textBoxState" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" BackColor="Silver" />
+                    <asp:TextBox ID="textBoxZipCode" runat="server" ReadOnly="true" CssClass="formTextBoxSmall" BackColor="Silver" />
                     <br />
                     <label>Phone</label>
-                    <asp:TextBox ID="textBoxPhone" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:TextBox ID="textBoxPhone" runat="server" ReadOnly="true" CssClass="formTextBox" BackColor="Silver" />
                     <br />
                     <label>Email</label>
-                    <asp:TextBox ID="textBoxEmail" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:TextBox ID="textBoxEmail" runat="server" ReadOnly="true" CssClass="formTextBox" BackColor="Silver" />
                     <br />
                 </div>
                 <asp:GridView ID="GridViewIncidents" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceIncidents" Width="100%">
                     <Columns>
+                        <asp:CommandField ShowSelectButton="True" />
                         <asp:BoundField DataField="ProductCode" HeaderText="ProductCode" SortExpression="ProductCode" />
                         <asp:BoundField DataField="DateOpened" HeaderText="DateOpened" SortExpression="DateOpened" />
                         <asp:BoundField DataField="DateClosed" HeaderText="DateClosed" SortExpression="DateClosed" />
