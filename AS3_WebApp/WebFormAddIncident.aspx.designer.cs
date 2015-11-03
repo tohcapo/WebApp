@@ -13,6 +13,24 @@ namespace AS3_WebApp {
     public partial class WebFormAddIncident {
         
         /// <summary>
+        /// ScriptManager1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// textBoxCustomerID control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,15 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxName;
         
         /// <summary>
+        /// UpdatePanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
+        
+        /// <summary>
         /// textBoxDateOpened control.
         /// </summary>
         /// <remarks>
@@ -56,6 +83,24 @@ namespace AS3_WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox textBoxDateOpened;
+        
+        /// <summary>
+        /// RegularExpressionValidatorDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorDate;
+        
+        /// <summary>
+        /// SqlDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// DropDownListProducts control.
@@ -67,6 +112,15 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListProducts;
         
         /// <summary>
+        /// RequiredFieldValidatorProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorProduct;
+        
+        /// <summary>
         /// textBoxTitle control.
         /// </summary>
         /// <remarks>
@@ -76,12 +130,39 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxTitle;
         
         /// <summary>
-        /// TextBox1 control.
+        /// RequiredFieldValidatorTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorTitle;
+        
+        /// <summary>
+        /// textBoxDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textBoxDescription;
+        
+        /// <summary>
+        /// RequiredFieldValidatorDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDescription;
+        
+        /// <summary>
+        /// buttonAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button buttonAdd;
     }
 }

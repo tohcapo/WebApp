@@ -13,5 +13,18 @@ namespace AS3_WebApp
         {
 
         }
+
+        protected void buttonGetCustomer_Click(object sender, EventArgs e)
+        {
+            Data.Customer c = new Data.dbConnection().GetCustomerByCustomerID(int.Parse(textBoxCustomerID.Text));
+            textBoxCustomerIDDisplay.Text = c.CustomerID.ToString();
+            textBoxName.Text = c.Name;
+        }
+
+        protected void buttonAdd_Click(object sender, EventArgs e)
+        {
+            Data.Incident i = new Data.Incident(null, int.Parse(textBoxCustomerID.Text), DropDownListProducts.SelectedValue, null, DateTime.Parse(textBoxDateOpened.Text), null, textBoxTitle.Text, textBoxDescription.Text);
+            new Data.dbConnection().InsertIncident(i);
+        }
     }
 }
