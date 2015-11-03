@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\bell.png" />
+    <Content Include="Images\whistle.png" />
     <Content Include="Styles\StyleSheet.css" />
     <Content Include="App_Data\TechSupport.mdf" />
     <Content Include="App_Data\TechSupport_log.ldf" />

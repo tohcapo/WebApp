@@ -13,9 +13,9 @@
     <form id="form1" runat="server">
         <div>
             <h1 style="text-align:center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bell_font_awesome.svg/512px-Bell_font_awesome.svg.png" width="32px" height="32px"/>
+                <img src="Images/bell.png" width="20px" height="20px"/>
                   Tech Support
-                <img src="https://openclipart.org/image/2400px/svg_to_png/5369/kelan-whistle-outline.png" width="32px" height="32px"/>
+                <img src="Images/whistle.png" width="20px" height="20px"/>
             </h1>
         
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
