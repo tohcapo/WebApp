@@ -12,7 +12,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1 style="text-align:center">Tech Support</h1>
+            <h1 style="text-align:center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Bell_font_awesome.svg/512px-Bell_font_awesome.svg.png" width="32px" height="32px"/>
+                  Tech Support
+                <img src="https://openclipart.org/image/2400px/svg_to_png/5369/kelan-whistle-outline.png" width="32px" height="32px"/>
+            </h1>
         
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
             <div id="navbar-container">
