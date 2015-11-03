@@ -12,12 +12,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1 style="text-align:center">
-                <img src="Images/bell.png" width="20px" height="20px"/>
-                  Tech Support
-                <img src="Images/whistle.png" width="20px" height="20px"/>
-            </h1>
-        
+            <h1 class="header">Tech Support</h1>
+
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
             <div id="navbar-container">
                 <asp:Menu ID="NavigationMenu" runat="server" StaticDisplayLevels="2" StaticSubMenuIndent="18px" Orientation="Horizontal" DynamicHorizontalOffset="10" DataSourceID="SiteMapDataSource1" ForeColor="Black">
@@ -26,14 +22,11 @@
             </div>
             
             <hr />
-            <br />
 
-            <div class="container">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
-            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
             
             <div class="footer">
-                <p>&copy 2015 Tech Support</p>
+                &copy 2015 Tech Support
             </div>
         </div>
     </form>

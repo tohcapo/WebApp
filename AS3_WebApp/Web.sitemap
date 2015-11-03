@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="WebFormMain.aspx" title="Home"  description="">
-      <siteMapNode url="WebFormTechnicianMaintenance.aspx" title="Technician Maintenance"  description="" />
-      <siteMapNode url="WebFormProductMaintenance.aspx" title="Product Maintenance"  description="" />
-      <siteMapNode url="WebFormCustomerIncidents.aspx" title="Customer Incidents"  description="" />
-      <siteMapNode url="WebFormAddIncident.aspx" title="Add Incident"  description="" />
-      <siteMapNode url="WebFormAddRegistration.aspx" title="Add Registration"  description="" />
-      <siteMapNode url="WebFormUserAccountMaintenance.aspx" title="User Account Maintenance"  description="" />
+    <siteMapNode url="Home.aspx" title="Home"  description="">
+      <siteMapNode url="Support/TechnicianMaintenance.aspx" title="Technician Maintenance"  description="" />
+      <siteMapNode url="Support/ProductMaintenance.aspx" title="Product Maintenance"  description="" />
+      <siteMapNode url="Technician/CustomerIncidents.aspx" title="Customer Incidents"  description="" />
+      <siteMapNode url="Support/AddIncident.aspx" title="Add Incident"  description="" />
+      <siteMapNode url="Support/AddRegistration.aspx" title="Add Registration"  description="" />
+      <siteMapNode url="Admin/UserAccountMaintenance.aspx" title="User Account Maintenance"  description="" />
     </siteMapNode>
 </siteMap>

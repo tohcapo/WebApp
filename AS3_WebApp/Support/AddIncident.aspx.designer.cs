@@ -10,114 +10,87 @@
 namespace AS3_WebApp {
     
     
-    public partial class WebFormTechnicianMaintenance {
+    public partial class WebFormAddIncident {
         
         /// <summary>
-        /// buttonEdit control.
+        /// textBoxCustomerID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit;
+        protected global::System.Web.UI.WebControls.TextBox textBoxCustomerID;
         
         /// <summary>
-        /// buttonDelete control.
+        /// buttonGetCustomer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete;
+        protected global::System.Web.UI.WebControls.Button buttonGetCustomer;
         
         /// <summary>
-        /// buttonEdit0 control.
+        /// textBoxCustomerIDDisplay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit0;
+        protected global::System.Web.UI.WebControls.TextBox textBoxCustomerIDDisplay;
         
         /// <summary>
-        /// buttonDelete0 control.
+        /// textBoxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete0;
+        protected global::System.Web.UI.WebControls.TextBox textBoxName;
         
         /// <summary>
-        /// buttonEdit1 control.
+        /// textBoxDateOpened control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit1;
+        protected global::System.Web.UI.WebControls.TextBox textBoxDateOpened;
         
         /// <summary>
-        /// buttonDelete1 control.
+        /// dropDownListProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete1;
+        protected global::System.Web.UI.WebControls.DropDownList dropDownListProducts;
         
         /// <summary>
-        /// buttonEdit2 control.
+        /// textBoxTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit2;
+        protected global::System.Web.UI.WebControls.TextBox textBoxTitle;
         
         /// <summary>
-        /// buttonDelete2 control.
+        /// textBoxDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete2;
+        protected global::System.Web.UI.WebControls.TextBox textBoxDescription;
         
         /// <summary>
-        /// buttonEdit3 control.
+        /// buttonAddIncident control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit3;
-        
-        /// <summary>
-        /// buttonDelete3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete3;
-        
-        /// <summary>
-        /// buttonEdit4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonEdit4;
-        
-        /// <summary>
-        /// buttonDelete4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button buttonDelete4;
+        protected global::System.Web.UI.WebControls.Button buttonAddIncident;
     }
 }
