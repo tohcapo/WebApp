@@ -63,4 +63,5 @@
         </Triggers>
     </asp:UpdatePanel>
     <asp:SqlDataSource ID="TechSupportDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand=""></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceCustomer" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand=""></asp:SqlDataSource>
 </asp:Content>

@@ -10,7 +10,7 @@ h1 {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:50%;
+    width:60%;
 }
 
 .header {
@@ -27,4 +27,43 @@ h1 {
 #navbar-container {
     display:table;
     margin:0 auto;
+}
+
+.form {
+    padding: 2em;
+    width: 80%;
+}
+
+.form label {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-bottom: 1em;
+    text-align: left;
+    padding-right: 1em;
+}
+
+.form br {
+    clear: left;
+}
+
+.formTextBox {
+    width: 240px;
+}
+
+.formButton {
+    width: 120px;
+}
+
+.formButtonSubmit {
+    float: right;
+}
+
+.formDropDownList {
+    width: 240px;
+}
+
+.formTextArea {
+    width: 240px;
+    height: 240px;
 }
