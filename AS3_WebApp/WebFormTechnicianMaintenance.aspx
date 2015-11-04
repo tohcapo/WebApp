@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">
+    <div class="container">
         <table border="1">
             <tr style="font-weight:bold">
                 <td style="width:200px" class="auto-style1">Tech ID</td>
@@ -82,4 +83,5 @@
                 </td>
             </tr>
         </table>
+    </div>
 </asp:Content>

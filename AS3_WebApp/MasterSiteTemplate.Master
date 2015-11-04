@@ -28,9 +28,7 @@
             <hr />
             <br />
 
-            <div class="container">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
-            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderID" runat="server" />
             
             <div class="footer">
                 <p>&copy 2015 Tech Support</p>
