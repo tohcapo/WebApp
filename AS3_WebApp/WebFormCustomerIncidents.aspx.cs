@@ -20,6 +20,9 @@ namespace AS3_WebApp
             BindSqlDataSources();
 
             ReadSqlDataSource();
+
+            buttonCloseIncident.Enabled = true;
+            buttonCloseIncident.Visible = true;
         }
 
         private void BindSqlDataSources()
@@ -53,6 +56,31 @@ namespace AS3_WebApp
                             textEmail.Text = r.GetValue(r.GetOrdinal("Email")).ToString();
                         }
                     }
+                }
+            }
+        }
+
+        protected void buttonCloseIncident_Click(object sender, EventArgs e)
+        {
+            if (GridViewIncidents.SelectedIndex != -1)
+            {
+                UpdateIncidentDateClosed(int.Parse(GridViewIncidents.SelectedValue.ToString()));
+
+                BindSqlDataSources();
+            }
+        }
+
+        private void UpdateIncidentDateClosed(int IncidentID)
+        {
+            using (SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["TechSupportConnectionString"].ConnectionString))
+            {
+                con.Open();
+                using (SqlCommand cmd = new SqlCommand(@"UPDATE [Incidents] SET DateClosed=@DateClosed WHERE IncidentID=@IncidentID", con))
+                {
+                    cmd.Parameters.AddWithValue("@IncidentID", IncidentID);
+                    cmd.Parameters.AddWithValue("@DateClosed", DateTime.Now.ToString());
+
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
