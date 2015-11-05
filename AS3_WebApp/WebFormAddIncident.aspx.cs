@@ -18,6 +18,8 @@ namespace AS3_WebApp
         protected void buttonAdd_Click(object sender, EventArgs e)
         {
             InsertIncident();
+
+            Response.Write("<script>alert('Incident Added.');</script>");
         }
 
         protected void buttonGetCustomer_Click(object sender, EventArgs e)
