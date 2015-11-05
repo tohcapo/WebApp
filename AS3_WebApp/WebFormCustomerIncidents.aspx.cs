@@ -48,7 +48,7 @@ namespace AS3_WebApp
                             textAddress.Text = r.GetValue(r.GetOrdinal("Address")).ToString();
                             textCity.Text = r.GetValue(r.GetOrdinal("City")).ToString();
                             textState.Text = r.GetValue(r.GetOrdinal("State")).ToString();
-                            textZip.Text = r.GetValue(r.GetOrdinal("ZipCode")).ToString();
+                            textZipCode.Text = r.GetValue(r.GetOrdinal("ZipCode")).ToString();
                             textPhone.Text = r.GetValue(r.GetOrdinal("Phone")).ToString();
                             textEmail.Text = r.GetValue(r.GetOrdinal("Email")).ToString();
                         }

@@ -51,6 +51,10 @@ h1 {
     width: 240px;
 }
 
+.formTextBoxSmall {
+    width: 75px;
+}
+
 .formButton {
     width: 120px;
 }

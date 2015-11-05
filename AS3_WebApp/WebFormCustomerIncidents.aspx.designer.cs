@@ -13,22 +13,22 @@ namespace AS3_WebApp {
     public partial class WebFormCustomerIncidents {
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// ScriptManager control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.ScriptManager ScriptManager;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// UpdatePanelCustomerDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.UpdatePanel UpdatePanelCustomerDetails;
         
         /// <summary>
         /// textCustomerID control.
@@ -94,13 +94,13 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textState;
         
         /// <summary>
-        /// textZip control.
+        /// textZipCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textZip;
+        protected global::System.Web.UI.WebControls.TextBox textZipCode;
         
         /// <summary>
         /// textPhone control.
