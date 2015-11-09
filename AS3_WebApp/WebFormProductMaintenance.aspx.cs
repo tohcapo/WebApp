@@ -17,16 +17,19 @@ namespace AS3_WebApp
 
         protected void buttonAddProduct_Click(object sender, EventArgs e)
         {
-            InsertProduct();
-
             Response.Write("<script>alert('Product Added.');</script>");
+
+            InsertProduct();
 
             BindSqlDataSources();
         }
 
         private void BindSqlDataSources()
         {
+            TechSupportDataSource.SelectCommand = "SELECT [ProductCode], [Name], [Version], [ReleaseDate] FROM [Products]";
+
             TechSupportDataSource.DataBind();
+            GridViewProducts.DataBind();
         }
 
         private void InsertProduct()

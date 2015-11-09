@@ -27,46 +27,45 @@
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
                 </asp:GridView>
                 <asp:SqlDataSource ID="TechSupportDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" DeleteCommand="DELETE FROM [Products] WHERE [ProductCode] = @ProductCode" InsertCommand="INSERT INTO [Products] ([ProductCode], [Name], [Version], [ReleaseDate]) VALUES (@ProductCode, @Name, @Version, @ReleaseDate)" SelectCommand="SELECT [ProductCode], [Name], [Version], [ReleaseDate] FROM [Products]" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Version] = @Version, [ReleaseDate] = @ReleaseDate WHERE [ProductCode] = @ProductCode">
-                <DeleteParameters>
-                    <asp:Parameter Name="ProductCode" Type="String" />
-                </DeleteParameters>
-                <InsertParameters>
-                    <asp:Parameter Name="ProductCode" Type="String" />
-                    <asp:Parameter Name="Name" Type="String" />
-                    <asp:Parameter Name="Version" Type="Decimal" />
-                    <asp:Parameter Name="ReleaseDate" Type="DateTime" />
-                </InsertParameters>
-                <UpdateParameters>
-                    <asp:Parameter Name="Name" Type="String" />
-                    <asp:Parameter Name="Version" Type="Decimal" />
-                    <asp:Parameter Name="ReleaseDate" Type="DateTime" />
-                    <asp:Parameter Name="ProductCode" Type="String" />
-                </UpdateParameters>
-            </asp:SqlDataSource>
-        </ContentTemplate>
+                    <DeleteParameters>
+                        <asp:Parameter Name="ProductCode" Type="String" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="ProductCode" Type="String" />
+                        <asp:Parameter Name="Name" Type="String" />
+                        <asp:Parameter Name="Version" Type="Decimal" />
+                        <asp:Parameter Name="ReleaseDate" Type="DateTime" />
+                    </InsertParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="Name" Type="String" />
+                        <asp:Parameter Name="Version" Type="Decimal" />
+                        <asp:Parameter Name="ReleaseDate" Type="DateTime" />
+                        <asp:Parameter Name="ProductCode" Type="String" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
+                <div class="form">        
+                    <label>Product Code:</label>
+                    <asp:TextBox ID="textProductCode" runat="server" CssClass="formTextBox" />
+                    <br />
+
+                    <label>Name:</label>
+                    <asp:TextBox ID="textName" runat="server" CssClass="formTextBox" />
+                    <br />
+
+                    <label>Version:</label>
+                    <asp:TextBox ID="textVersion" runat="server" CssClass="formTextBox" />
+                    <br />
+
+                    <label>Release Date:</label>
+                    <asp:TextBox ID="textReleaseDate" runat="server" CssClass="formTextBox" />
+                    <br />
+
+                    <asp:Button ID="buttonAddProduct" runat="server" Text="Add" CssClass="formButton" OnClick="buttonAddProduct_Click" />
+                </div>  
+            </ContentTemplate>
             <Triggers>
                 <asp:AsyncPostBackTrigger ControlID="buttonAddProduct" EventName="Click" />
-                <asp:PostBackTrigger ControlID="GridViewProducts" />
             </Triggers>
-        </asp:UpdatePanel>
-        <div class="form">        
-            <label>Product Code:</label>
-            <asp:TextBox ID="textProductCode" runat="server" CssClass="formTextBox" />
-            <br />
-
-            <label>Name:</label>
-            <asp:TextBox ID="textName" runat="server" CssClass="formTextBox" />
-            <br />
-
-            <label>Version:</label>
-            <asp:TextBox ID="textVersion" runat="server" CssClass="formTextBox" />
-            <br />
-
-            <label>Release Date:</label>
-            <asp:TextBox ID="textReleaseDate" runat="server" CssClass="formTextBox" />
-            <br />
-
-            <asp:Button ID="buttonAddProduct" runat="server" Text="Add" CssClass="formButton" OnClick="buttonAddProduct_Click" />
-        </div>    
+        </asp:UpdatePanel>  
     </div>
 </asp:Content>
