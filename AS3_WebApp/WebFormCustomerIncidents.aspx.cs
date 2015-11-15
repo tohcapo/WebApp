@@ -78,7 +78,7 @@ namespace AS3_WebApp
                 using (SqlCommand cmd = new SqlCommand(@"UPDATE [Incidents] SET DateClosed=@DateClosed WHERE IncidentID=@IncidentID", con))
                 {
                     cmd.Parameters.AddWithValue("@IncidentID", IncidentID);
-                    cmd.Parameters.AddWithValue("@DateClosed", DateTime.Now.ToString());
+                    cmd.Parameters.AddWithValue("@DateClosed", DateTime.Now);
 
                     cmd.ExecuteNonQuery();
                 }

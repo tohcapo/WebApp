@@ -30,6 +30,8 @@ namespace AS3_WebApp
 
             TechSupportDataSource.DataBind();
             GridViewProducts.DataBind();
+
+            Response.Redirect(Request.RawUrl);
         }
 
         private void InsertProduct()
