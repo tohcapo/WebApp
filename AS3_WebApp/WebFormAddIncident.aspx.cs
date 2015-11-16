@@ -75,7 +75,7 @@ namespace AS3_WebApp
 
         protected void buttonGetCurrentDateTime_Click(object sender, EventArgs e)
         {
-            textBoxDateOpened.Text = DateTime.Now.ToString();
+            textBoxDateOpened.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
 
