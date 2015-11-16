@@ -40,6 +40,15 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.Button buttonGetCustomer;
         
         /// <summary>
+        /// RequiredFieldValidatorGetCustomerID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorGetCustomerID;
+        
+        /// <summary>
         /// UpdatePanelCustomerDetails control.
         /// </summary>
         /// <remarks>
@@ -94,13 +103,13 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxDateOpened;
         
         /// <summary>
-        /// RegularExpressionValidatorDateOpened control.
+        /// RangeValidatorDateOpened control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorDateOpened;
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidatorDateOpened;
         
         /// <summary>
         /// RequiredFieldValidatorDateOpened control.
