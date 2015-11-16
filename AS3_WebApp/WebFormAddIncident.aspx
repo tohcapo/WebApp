@@ -8,7 +8,8 @@
         <div class="form">
             <label>Customer ID:</label>
             <asp:TextBox ID="textBoxGetCustomerID" runat="server" CssClass="formTextBox" />
-            <asp:Button ID="buttonGetCustomer" runat="server" Text="Get Customer" CssClass="formButton" OnClick="buttonGetCustomer_Click" />
+            <asp:Button ID="buttonGetCustomer" runat="server" Text="Get Customer" CssClass="formButton" OnClick="buttonGetCustomer_Click" ValidationGroup="ValidationGroup2" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorGetCustomerID" runat="server" ErrorMessage="A Customer ID must be entered." ControlToValidate="textBoxGetCustomerID" ValidationGroup="ValidationGroup2"></asp:RequiredFieldValidator>
             <br />
             <asp:UpdatePanel ID="UpdatePanelCustomerDetails" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
@@ -32,7 +33,7 @@
             <asp:UpdatePanel ID="UpdatePanelGetCurrentDateTime" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <asp:TextBox ID="textBoxDateOpened" runat="server" CssClass="formTextBox" />
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidatorDateOpened" runat="server" ErrorMessage="Date Opened must be in format DD/MM/YYYY HH:MM:SS AM/PM" ControlToValidate="textBoxDateOpened" ValidationExpression="^(?:0[1-9]|1[12])/(?:[0-2][0-9]|3[01])/[0-9]{4}\s(?:0[0-9]|1[01]):(?:[0-5][0-9])\s(?:AM|PM)$" ValidationGroup="ValidationGroup1"></asp:RegularExpressionValidator>
+                    <asp:RangeValidator ID="RangeValidatorDateOpened" runat="server" ErrorMessage="Date Opened must be a DateTime format. DD/MM/YYYY" Type="Date" MaximumValue="9999/01/01" MinimumValue="1000/01/01" ControlToValidate="textBoxDateOpened" ValidationGroup="ValidationGroup1"></asp:RangeValidator>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorDateOpened" runat="server" ErrorMessage="Date Opened is a required field." ControlToValidate="textBoxDateOpened" ValidationGroup="ValidationGroup1"></asp:RequiredFieldValidator>
                 </ContentTemplate>
                 <Triggers>
