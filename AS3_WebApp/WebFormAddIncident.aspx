@@ -14,6 +14,7 @@
                 <ContentTemplate>
                     <label>Customer ID:</label>
                     <asp:TextBox ID="textBoxCustomerID" runat="server" ReadOnly="true" CssClass="formTextBox" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorCustomerID" runat="server" ErrorMessage="A Customer ID must be selected." ControlToValidate="textBoxCustomerID" ValidationGroup="ValidationGroup1"></asp:RequiredFieldValidator>
                     <br />
 
                     <label>Name:</label>
@@ -24,11 +25,15 @@
                     <asp:AsyncPostBackTrigger ControlID="buttonGetCustomer" EventName="Click" />
                 </Triggers>
              </asp:UpdatePanel>
+
             <hr />
+
             <label>Date Opened:</label>
             <asp:UpdatePanel ID="UpdatePanelGetCurrentDateTime" runat="server" UpdateMode="Conditional">
                 <ContentTemplate>
                     <asp:TextBox ID="textBoxDateOpened" runat="server" CssClass="formTextBox" />
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidatorDateOpened" runat="server" ErrorMessage="Date Opened must be in format DD/MM/YYYY HH:MM:SS AM/PM" ControlToValidate="textBoxDateOpened" ValidationExpression="^(?:0[1-9]|1[12])/(?:[0-2][0-9]|3[01])/[0-9]{4}\s(?:0[0-9]|1[01]):(?:[0-5][0-9])\s(?:AM|PM)$" ValidationGroup="ValidationGroup1"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorDateOpened" runat="server" ErrorMessage="Date Opened is a required field." ControlToValidate="textBoxDateOpened" ValidationGroup="ValidationGroup1"></asp:RequiredFieldValidator>
                 </ContentTemplate>
                 <Triggers>
                     <asp:AsyncPostBackTrigger ControlID="buttonGetCurrentDateTime" EventName="Click" />
@@ -43,6 +48,7 @@
 
             <label>Title:</label>
             <asp:TextBox ID="textBoxTitle" runat="server" CssClass="formTextBox" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidatorTitle" runat="server" ErrorMessage="Title is a required field." ControlToValidate="textBoxTitle" ValidationGroup="ValidationGroup1"></asp:RequiredFieldValidator>
             <br />
 
             <label>Description:</label>
@@ -50,9 +56,10 @@
             <br />
 
             <label></label>
-            <asp:Button ID="buttonAddIncident" runat="server" Text="Add" CssClass="formButton" OnClick="buttonAdd_Click" />
+            <asp:Button ID="buttonAddIncident" runat="server" Text="Add" CssClass="formButton" OnClick="buttonAdd_Click" ValidationGroup="ValidationGroup1" />
         </div>
     </div>
+
     <asp:SqlDataSource ID="SqlDataSourceCustomer" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" ProviderName="<%$ ConnectionStrings:TechSupportConnectionString.ProviderName %>"></asp:SqlDataSource>
     <asp:SqlDataSource ID="SqlDataSourceProducts" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" ProviderName="<%$ ConnectionStrings:TechSupportConnectionString.ProviderName %>" SelectCommand="SELECT ProductCode, Name FROM Products"></asp:SqlDataSource>
 </asp:Content>

@@ -58,6 +58,15 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxCustomerID;
         
         /// <summary>
+        /// RequiredFieldValidatorCustomerID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorCustomerID;
+        
+        /// <summary>
         /// textBoxName control.
         /// </summary>
         /// <remarks>
@@ -85,6 +94,24 @@ namespace AS3_WebApp {
         protected global::System.Web.UI.WebControls.TextBox textBoxDateOpened;
         
         /// <summary>
+        /// RegularExpressionValidatorDateOpened control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorDateOpened;
+        
+        /// <summary>
+        /// RequiredFieldValidatorDateOpened control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDateOpened;
+        
+        /// <summary>
         /// buttonGetCurrentDateTime control.
         /// </summary>
         /// <remarks>
@@ -110,6 +137,15 @@ namespace AS3_WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox textBoxTitle;
+        
+        /// <summary>
+        /// RequiredFieldValidatorTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorTitle;
         
         /// <summary>
         /// textBoxDescription control.
