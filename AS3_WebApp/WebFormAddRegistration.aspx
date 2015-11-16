@@ -50,8 +50,6 @@
     </table>
     <p class="auto-style1">
                 <asp:Button ID="btnRegProduct" runat="server" Text="Register Product" Width="120px" />
-                <asp:Button ID="btnCancel" runat="server" Text="Cancel" Width="62px" />
-                <asp:Button ID="btnExit" runat="server" Text="Exit" Width="62px" />
             </p>
 
 
