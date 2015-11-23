@@ -37,12 +37,12 @@
             <asp:TextBox ID="txtRegDate" runat="server"></asp:TextBox>
             <br />
 
-            <asp:Button ID="btnRegProduct" runat="server" Text="Register Product" CssClass="formButton" />
+            <asp:Button ID="btnRegProduct" runat="server" Text="Register Product" CssClass="formButton" OnClick="btnRegProduct_Click" />
 
         </div>
     </div>
          
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT [CustomerID] FROM [Registrations]"></asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT [ProductCode] FROM [Registrations]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT [CustomerID] FROM [Customers]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:TechSupportConnectionString %>" SelectCommand="SELECT [ProductCode] FROM [Products]"></asp:SqlDataSource>
      
 </asp:Content>

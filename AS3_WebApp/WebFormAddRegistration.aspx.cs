@@ -34,5 +34,60 @@ namespace AS3_WebApp
             }
         }
 
+        private void AddRegistrations()
+        {
+            using (SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["TechSupportConnectionString"].ConnectionString))
+            {
+                connection.Open();
+                using (SqlCommand cmd = new SqlCommand(@"INSERT INTO [Registrations] (CustomerID, ProductCode, RegistrationDate) VALUES (@CustomerID, @ProductCode, @RegDate);", connection))
+                {
+                    cmd.Parameters.AddWithValue("@CustomerID", dropCustomer.Text);
+                    cmd.Parameters.AddWithValue("@ProductCode", dropProduct.Text);
+                    cmd.Parameters.AddWithValue("@RegDate", DateTime.Now);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+
+        }
+
+        private bool CheckRegistrationExists()
+        {
+            using (SqlConnection connection = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["TechSupportConnectionString"].ConnectionString))
+            {
+                connection.Open();
+                using (SqlCommand cmd = new SqlCommand(@"SELECT TOP 1 * FROM [Registrations] WHERE CustomerID=@CustomerID AND ProductCode=@ProductCode;", connection))
+                {
+                    cmd.Parameters.AddWithValue("@CustomerID", dropCustomer.Text);
+                    cmd.Parameters.AddWithValue("@ProductCode", dropProduct.Text);
+
+                    using (SqlDataReader r = cmd.ExecuteReader())
+                    {
+                        int c = 0;
+                        while (r.Read())
+                        {
+                            c += 1;
+                        }
+                        if (c == 1)
+                            return true;
+                        else
+                            return false;
+                    }
+                }
+            }
+            
+        }
+
+        protected void btnRegProduct_Click(object sender, EventArgs e)
+        {
+            if (!CheckRegistrationExists())
+            {
+                AddRegistrations();
+            }
+            else
+            {
+                Response.Write("<script>alert('Registration already exists.');</script>");
+            }
+        }
     }
 }
