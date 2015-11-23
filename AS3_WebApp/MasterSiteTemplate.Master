@@ -13,9 +13,9 @@
     <form id="form1" runat="server">
         <div>
             <h1 style="text-align:center">
-                <img src="Images/bell.png" width="20px" height="20px"/>
+                <img src="/Images/bell.png" width="20px" height="20px"/>
                   Tech Support
-                <img src="Images/whistle.png" width="20px" height="20px"/>
+                <img src="/Images/whistle.png" width="20px" height="20px"/>
             </h1>
         
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />

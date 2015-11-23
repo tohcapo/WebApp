@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="WebFormUserAccountMaintenance.aspx.cs" Inherits="AS3_WebApp.WebFormUserAccountMaintenance" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="UserAccountMaintenance.aspx.cs" Inherits="AS3_WebApp.WebFormUserAccountMaintenance" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
