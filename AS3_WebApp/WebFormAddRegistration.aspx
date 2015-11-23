@@ -35,6 +35,9 @@
 
             <label>Registration Date:</label>
             <asp:TextBox ID="txtRegDate" runat="server"></asp:TextBox>
+
+            <label>Use DD/MM/YYYY HH:MM:SS AM/PM Format</label>
+            <br />
             <br />
 
             <asp:Button ID="btnRegProduct" runat="server" Text="Register Product" CssClass="formButton" OnClick="btnRegProduct_Click" />

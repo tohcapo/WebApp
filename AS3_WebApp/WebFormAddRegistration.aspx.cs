@@ -43,7 +43,7 @@ namespace AS3_WebApp
                 {
                     cmd.Parameters.AddWithValue("@CustomerID", dropCustomer.Text);
                     cmd.Parameters.AddWithValue("@ProductCode", dropProduct.Text);
-                    cmd.Parameters.AddWithValue("@RegDate", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@RegDate", DateTime.Parse(txtRegDate.Text));
 
                     cmd.ExecuteNonQuery();
                 }
