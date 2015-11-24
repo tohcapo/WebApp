@@ -10,6 +10,6 @@
             can contact us and take a ticket and a technician will arrive at your residence and
             fix the tech related problem
         </p>
-        <asp:HyperLink ID="HyperLinkLogIn" runat="server" NavigateUrl="~/Pages/Login.aspx">Login</asp:HyperLink>
+        <asp:HyperLink ID="HyperLinkLogIn" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
     </div>
 </asp:Content>

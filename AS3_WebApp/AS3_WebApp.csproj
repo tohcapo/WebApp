@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
     <Content Include="Images\bell.png" />
     <Content Include="Images\whistle.png" />
     <Content Include="Styles\StyleSheet.css" />
@@ -68,7 +72,7 @@
     <Content Include="Pages\Support\AddIncident.aspx" />
     <Content Include="Pages\Support\AddRegistration.aspx" />
     <Content Include="Pages\Technician\CustomerIncidents.aspx" />
-    <Content Include="Pages\Login.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Pages\Home.aspx" />
     <Content Include="Pages\Support\ProductMaintenance.aspx" />
     <Content Include="Pages\Support\TechnicianMaintenance.aspx" />
@@ -104,11 +108,11 @@
     <Compile Include="Pages\Technician\CustomerIncidents.aspx.designer.cs">
       <DependentUpon>CustomerIncidents.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Login.aspx.cs">
+    <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Login.aspx.designer.cs">
+    <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Home.aspx.cs">
@@ -142,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterSiteTemplate.Master" />
+    <Content Include="Pages\Admin\web.config" />
+    <Content Include="Pages\Support\web.config" />
+    <Content Include="Pages\Technician\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
