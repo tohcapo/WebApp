@@ -1,5 +1,5 @@
 ﻿<%-- Author: Luke Michels --%>
-<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="AS3_WebApp.WebFormMain" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AS3_WebApp.WebFormMain" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderID" runat="server">

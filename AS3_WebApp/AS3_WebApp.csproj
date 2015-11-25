@@ -73,7 +73,7 @@
     <Content Include="Pages\Support\AddRegistration.aspx" />
     <Content Include="Pages\Technician\CustomerIncidents.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="Pages\Home.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="Pages\Support\ProductMaintenance.aspx" />
     <Content Include="Pages\Support\TechnicianMaintenance.aspx" />
     <Content Include="Pages\Admin\UserAccountMaintenance.aspx" />
@@ -115,12 +115,12 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Support\ProductMaintenance.aspx.cs">
       <DependentUpon>ProductMaintenance.aspx</DependentUpon>
