@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="AddIncident.aspx.cs" Inherits="AS3_WebApp.WebFormAddIncident" %>
+﻿<%-- Author: Anthony Beck --%>
+<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="AddIncident.aspx.cs" Inherits="AS3_WebApp.WebFormAddIncident" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>

@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="AddRegistration.aspx.cs" Inherits="AS3_WebApp.WebFormAddRegistration" %>
+﻿<%-- Author: Jaike Cambridge --%>
+<%@ Page Language="C#" MasterPageFile="~/MasterSiteTemplate.Master" AutoEventWireup="true" CodeBehind="AddRegistration.aspx.cs" Inherits="AS3_WebApp.WebFormAddRegistration" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>

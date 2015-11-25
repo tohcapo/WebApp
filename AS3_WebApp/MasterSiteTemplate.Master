@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSiteTemplate.master.cs" Inherits="AS3_WebApp.MasterSiteTemplate" %>
+﻿<%-- Author: Luke Michels --%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSiteTemplate.master.cs" Inherits="AS3_WebApp.MasterSiteTemplate" %>
 
 <!DOCTYPE html>
 

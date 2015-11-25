@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Author: Jaike Cambridge
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
